@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Search, Shield, Users } from 'lucide-react';
+import { Search, Home, UserCheck, Shield, Users, Play } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -10,22 +10,38 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <h1 className="text-5xl font-bold mb-6 text-gray-900 leading-tight">
-              Pay <span className="text-green-600">10%</span> Agent Fees,
+              Affordable Housing.
               <br />
-              Not <span className="text-red-500 line-through">30%</span>
+              <span className="text-green-600">Zero Agents.</span>
+              <br />
+              Just <span className="text-blue-600">Ease.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              HomeEase eliminates housing exploitation in Nigeria. Find verified properties, 
+              Nigeria's first anti-exploitation housing platform. Find verified properties, 
               connect with trusted landlords, and pay fair fees backed by our transparency guarantee.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
                 <Search className="mr-2 h-5 w-5" />
-                Find Your Home
+                Find a House
               </Button>
               <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3">
-                List Your Property
+                <Home className="mr-2 h-5 w-5" />
+                List a Property
+              </Button>
+              <Button variant="outline" size="lg" className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3">
+                <UserCheck className="mr-2 h-5 w-5" />
+                Join as Agent
+              </Button>
+            </div>
+
+            <div className="flex items-center gap-4 mb-8">
+              <Button variant="ghost" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+                <div className="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Play className="h-6 w-6 text-blue-600" />
+                </div>
+                Watch How It Works
               </Button>
             </div>
 
